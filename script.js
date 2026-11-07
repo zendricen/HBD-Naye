@@ -8,7 +8,7 @@
    ===================================================== */
 
 // GANTI NAMA DI SINI
-const birthdayName = "Maura";
+const birthdayName = "Naye";
 
 // GANTI PESAN DI SINI
 const birthdayMessage = `
