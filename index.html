@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday 🎂</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         BACKGROUND DECORATION
+    ========================== -->
+
+    <div class="stars">
+        <span>✦</span>
+        <span>✧</span>
+        <span>✦</span>
+        <span>✧</span>
+        <span>✦</span>
+        <span>✧</span>
+    </div>
+
+
+    <!-- =========================
+         OPENING
+    ========================== -->
+
+    <section id="opening" class="screen active">
+
+        <div class="opening-content">
+
+            <div class="gift-icon">
+                🎁
+            </div>
+
+            <h1>Something Special...</h1>
+
+            <p>
+                Ada sebuah kejutan kecil untukmu.
+            </p>
+
+            <button id="startButton" class="main-button">
+                Mulai Perayaan ✨
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CAKE SECTION
+    ========================== -->
+
+    <section id="cakeSection" class="screen">
+
+        <div class="section-container">
+
+            <h2 class="section-title">
+                Mari Kita Buat Kue 🎂
+            </h2>
+
+            <p class="instruction" id="cakeInstruction">
+                Klik bahan-bahan di bawah untuk membuat kue.
+            </p>
+
+
+            <!-- Cake -->
+
+            <div class="cake-area">
+
+                <div id="cake" class="cake">
+
+                    <div class="cake-top">
+
+                        <div class="candle candle1">
+                            <div class="flame"></div>
+                        </div>
+
+                        <div class="candle candle2">
+                            <div class="flame"></div>
+                        </div>
+
+                        <div class="candle candle3">
+                            <div class="flame"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="cake-layer layer3"></div>
+                    <div class="cake-layer layer2"></div>
+                    <div class="cake-layer layer1"></div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Ingredients -->
+
+            <div class="ingredients">
+
+                <button class="ingredient" data-ingredient="flour">
+                    🌾
+                    <span>Tepung</span>
+                </button>
+
+                <button class="ingredient" data-ingredient="egg">
+                    🥚
+                    <span>Telur</span>
+                </button>
+
+                <button class="ingredient" data-ingredient="milk">
+                    🥛
+                    <span>Susu</span>
+                </button>
+
+                <button class="ingredient" data-ingredient="sugar">
+                    🍚
+                    <span>Gula</span>
+                </button>
+
+                <button class="ingredient" data-ingredient="cream">
+                    🍓
+                    <span>Krim</span>
+                </button>
+
+            </div>
+
+
+            <button id="finishCakeButton" class="main-button hidden">
+                Selesai Membuat Kue 🎂
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CANDLE SECTION
+    ========================== -->
+
+    <section id="candleSection" class="screen">
+
+        <div class="section-container">
+
+            <h2 class="section-title">
+                Saatnya Menyalakan Lilin 🕯️
+            </h2>
+
+            <p class="instruction">
+                Klik setiap lilin untuk menyalakannya.
+            </p>
+
+
+            <div class="big-cake">
+
+                <div class="big-candle" data-candle="1">
+                    <div class="big-flame"></div>
+                </div>
+
+                <div class="big-candle" data-candle="2">
+                    <div class="big-flame"></div>
+                </div>
+
+                <div class="big-candle" data-candle="3">
+                    <div class="big-flame"></div>
+                </div>
+
+                <div class="big-cake-top"></div>
+
+                <div class="big-cake-bottom"></div>
+
+            </div>
+
+
+            <p id="candleStatus">
+                0 / 3 lilin menyala
+            </p>
+
+
+            <button id="blowButton" class="main-button hidden">
+                Tiup Lilinnya! 💨
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         BIRTHDAY SECTION
+    ========================== -->
+
+    <section id="birthdaySection" class="screen">
+
+        <!-- Balloons -->
+
+        <div class="balloon-container">
+
+            <div class="balloon balloon-red">
+                <span>♥</span>
+            </div>
+
+            <div class="balloon balloon-blue">
+                <span>★</span>
+            </div>
+
+            <div class="balloon balloon-yellow">
+                <span>♥</span>
+            </div>
+
+            <div class="balloon balloon-purple">
+                <span>★</span>
+            </div>
+
+            <div class="balloon balloon-pink">
+                <span>♥</span>
+            </div>
+
+            <div class="balloon balloon-green">
+                <span>★</span>
+            </div>
+
+        </div>
+
+
+        <!-- Birthday Content -->
+
+        <div class="birthday-content">
+
+            <div class="birthday-cake">
+                🎂
+            </div>
+
+            <h1>
+                Happy Birthday!
+            </h1>
+
+            <h2 id="birthdayName">
+                Nama Kamu
+            </h2>
+
+            <div class="message-box">
+
+                <p id="typingMessage"></p>
+
+            </div>
+
+            <button id="celebrateButton" class="main-button">
+                Rayakan! 🎉
+            </button>
+
+        </div>
+
+
+        <!-- Confetti -->
+
+        <div id="confetti-container"></div>
+
+    </section>
+
+
+    <!-- =========================
+         FINAL SECTION
+    ========================== -->
+
+    <section id="finalSection" class="screen">
+
+        <div class="final-content">
+
+            <div class="heart">
+
+            </div>
+
+            <h1>
+                Sekali lagi...
+            </h1>
+
+            <h2>
+                Selamat Ulang Tahun! 🎂
+            </h2>
+
+            <p>
+                Semoga hari ini menjadi salah satu hari
+                yang paling berkesan untukmu.
+            </p>
+
+            <p>
+                Semoga semua impianmu perlahan
+                menjadi kenyataan. ✨
+            </p>
+
+            <button id="restartButton" class="main-button">
+                Ulangi Perayaan 🔄
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         MUSIC
+    ========================== -->
+
+    <audio id="birthdayMusic" loop>
+        <source src="assets/birthday.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
